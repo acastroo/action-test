@@ -57,6 +57,3 @@ jobs:
       - name: Deploy
         run: |-
           kubectl apply -f deployment.yaml --record=true
-        with:
-          CLOUDSDK_CONTAINER_CLUSTER: primary-cluster
-          CLOUDSDK_COMPUTE_REGION: europe-west1
