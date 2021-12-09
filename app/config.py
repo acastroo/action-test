@@ -1,0 +1,22 @@
+import os
+
+DEBUG = os.environ.get('DEBUG', False)
+LOG_LEVEL = os.environ.get('LOG_LEVEL', 'INFO' if DEBUG else 'WARNING')
+
+GOOGLE_SERVICE_ACCOUNT = os.environ.get('GOOGLE_APPLICATION_CREDENTIALS')
+
+PROJECT_ID = os.environ.get('GCP_PROJECT_ID')
+DATASET = os.environ.get('BILLING_BQ_DATASET')
+
+# By Project and Service
+BQ_PRE_AGGREGATED_BY_PROJECT = os.environ.get('BILLING_BQ_TABLE_BY_PROJECT')
+
+# Pub/Sub
+MAX_MESSAGES = 20
+BILLING_ALERTS_TOPIC_ID = os.environ.get('BILLING_ALERTS_TOPIC_ID')
+BILLING_ALERTS_SUBSCRIPTION_ID = os.environ.get('BILLING_ALERTS_SUBSCRIPTION_ID')
+
+# SendGrid
+SENDGRID_API_KEY = os.environ.get('SENDGRID_API_KEY')
+BILLING_ALERT_TEMPLATE_ID = os.environ.get('BILLING_ALERT_TEMPLATE_ID')
+CC_WEBSITE = os.environ.get('CC_WEBSITE')

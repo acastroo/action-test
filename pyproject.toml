@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "msp-cc-api-billing-alert"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+fastapi = "^0.68.1"
+uvicorn = "^0.15.0"
+firebase-admin = "^5.0.2"
+python-multipart = "^0.0.5"
+google-cloud = "^0.34.0"
+google = "^3.0.0"
+gcloud = "^0.18.3"
+protobuf = "^3.18.0"
+google-api-python-client = "^2.21.0"
+google-cloud-core = "^1.4.1"
+google-cloud-bigquery = "^1.24.0"
+googleapis-common-protos = "^1.53.0"
+pytest = "^6.2.5"
+google-cloud-pubsub = "^2.8.0"
+sendgrid = "^6.8.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
